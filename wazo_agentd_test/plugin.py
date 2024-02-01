@@ -14,4 +14,4 @@ class Plugin:
 
         agent_service = AgentTestService()
 
-        api.add_resource(AgentTest, '/test', resource_class_args=[agent_service])
+        api.add_resource(AgentTestResource, '/test', resource_class_args=[agent_service])
