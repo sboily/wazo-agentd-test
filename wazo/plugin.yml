@@ -1,0 +1,10 @@
+name: wazo-agentd-test
+namespace: sboily
+version: 0.0.2
+author: Sylvain Boily
+display_name: Agentd plugin test
+min_wazo_version: 24.02
+tags:
+  - experimental
+  - agent
+homepage: https://github.com/sboily/wazo-agentd-test

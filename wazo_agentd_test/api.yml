@@ -1,0 +1,21 @@
+paths:
+  /test:
+    get:
+      summary: Get test
+      description: '**Required ACL:** `agentd.test.read`'
+      tags:
+      - test
+      responses:
+        '200':
+          description: Return test is ok
+          schema:
+            $ref: '#/definitions/Test'
+        '503':
+          $ref: '#/responses/AnotherServiceUnavailable'
+definitions:
+  Test:
+    type: object
+    properties:
+      test:
+        description: Return ok
+        type: string
