@@ -13,6 +13,6 @@ class AgentTestResource(AuthResource):
 
     @required_acl('agentd.test.read')
     def get(self):
-        test_list = self._agent_service.list()
+        test_list = self._test_service.list()
 
         return test_list, 200
