@@ -2,8 +2,8 @@
 # SPDX-License-Identifier: GPL-3.0+
 
 
-from wazo_calld.auth import required_acl
-from wazo_calld.http import AuthResource
+from xivo.auth_verifier import required_acl
+from wazo_agentd.http import AuthResource
 
 
 class AgentTestResource(AuthResource):
